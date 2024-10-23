@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        #circle {
+            background-color: rgb(105, 220, 118);
+        }
+
+        #square {
+            background-color: aqua;
+        }
+
+        #rectangle {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="circle" width="200" height="100" >
+
+        </canvas>
+
+        <script>
+            const canvas = document.getElementById("circle");
+            const ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+
+
+        <canvas id="square" width="150" height="150"></canvas>
+
+        <script>
+            const ca = document.getElementById("square");
+            const ctxa = c.getContext("2d");
+
+            ctx.beginPath();
+            ctx.rect(20, 20, 150, 100); x
+            ctx.stroke();
+        </script>
+
+
+        <canvas id="rectangle" width="300" height="150"></canvas>
+
+        <script>
+            const cb = document.getElementById("rectangle");
+            const ctxb = c.getContext("2d");
+
+            ctx.beginPath();
+            ctx.rect(20, 20, 150, 100);
+            ctx.stroke();
+        </script>
+    </div>
+
+</body>
+
+</html>
